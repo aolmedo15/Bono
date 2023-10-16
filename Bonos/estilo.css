@@ -1,0 +1,21 @@
+body{
+    background-color: antiquewhite;
+    font-size: 15;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+table{
+    width: 1000px;
+    border: 1cm;
+    border-radius: 10px;
+    border-color: brown;
+}
+
+.tr1{
+    background-color: aqua;
+}
+
+.tr2{
+    background-color: beige;
+    align-content: center;
+}

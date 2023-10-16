@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <link rel="stylesheet" href="estilo.css">
+        <title>Document</title>
+        <script>
+            document.write("<center>")
+            document.write("<h1> Cálculo de bonos en una empresa </h1>")
+            document.write("</center>")
+        nombre = prompt("Ingrese el nombre del colaborador")
+        depto = prompt("Ingrese el area de trabajo")
+        sueldo = prompt("Ingrese el salario que percibe")
+        antiguedad = prompt("Ingrese la antiguedad del colaborador")
+        dias = prompt("Ingrese la cantidad de dias trabajados")
+
+        subtotal = sueldo * dias
+        bono = 0
+
+        document.write("<center>")
+        document.write("<table class=table>")
+            document.write("<tr class=tr1>")
+                document.write("<th>")
+                    document.write("NOMBRE")
+                document.write("</th>")
+                document.write("<th>")
+                    document.write("DEPTO")
+                document.write("</th>")
+                document.write("<th>")
+                    document.write("SALARIO DIARIO")
+                document.write("</th>")
+                document.write("<th>")
+                    document.write("ANTIGUEDAD")
+                document.write("</th>")
+                document.write("<th>")
+                    document.write("DIAS TRABAJADOS")
+                document.write("</th>")
+                document.write("<th>")
+                    document.write("SUBTOTAL")
+                document.write("</th>")
+                document.write("<th>")
+                    document.write("BONO")
+                document.write("</th>")
+                document.write("<th>")
+                    document.write("TOTAL")
+                document.write("</th>")
+            document.write("</tr>")
+            document.write("<tr align=center class=tr2>")
+                document.write("<td>")
+                    document.write(nombre)
+                document.write("</td>")
+                document.write("<td>")
+                    document.write(depto)
+                document.write("</td>")
+                document.write("<td>")
+                    document.write(sueldo)
+                document.write("</td>")
+                document.write("<td>")
+                    document.write(antiguedad)
+                document.write("</td>")
+                document.write("<td>")
+                    document.write(dias)
+                document.write("</td>")
+                document.write("<td>")
+                    document.write("$"+subtotal)
+                    document.write("</td>")
+                    if(antiguedad >= 15)
+                    {
+                        bono = subtotal*(0.3)
+                        total = subtotal + bono
+                        document.write("<td>")
+                            document.write("$"+bono)
+                        document.write("</td>")
+                        document.write("<td>")
+                            document.write("$"+total)
+                        document.write("</td>")
+                    }
+                    else
+                    {
+                        bono = subtotal*(0.15)
+                        total = subtotal + bono
+                        document.write("<td>")
+                            document.write("$"+bono)
+                        document.write("</td>")
+                        document.write("<td>")
+                            document.write("$"+total)
+                        document.write("</td>")
+                    }
+            document.write("</tr>")
+        document.write("</table>")
+
+    </script>
+    </head>
+    <body>
+
+    </body>
+</html>
